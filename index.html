@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=auto, initial-scale=1.0">
+    <title>Smail Abd El Madjid</title>
+</head>
+
+<body>
+    <style>
+        body {
+            display: grid;
+            place-content: center;
+            margin: 0;
+            height: 100vh;
+            background: #222;
+            color: #ddd;
+            font: italic clamp(1.25em, 15vw, 7em)/ 1.25 marck script, purisa, segoe script, comic sans ms, cursive;
+            text-align: center
+        }
+
+        p,
+        h2 {
+            isolation: isolate
+        }
+
+        span {
+            position: relative;
+            padding: 0 .25em;
+            color: gold;
+            text-decoration: none;
+        }
+
+        span::after {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            transform-origin: 0 100%;
+            transform: scaley(.05);
+            background: currentColor;
+            mix-blend-mode: difference;
+            transition: transform .25s;
+            content: ''
+        }
+
+        span:hover::after {
+            transform: none ;
+            transform-origin: 0 0%;
+
+        }
+    </style>
+    <div class="container">
+        <p>
+            Smail <span>Abd El Madjid</span>
+        </p>
+        <p>
+            Hello <span>Word !</span>
+        </p>
+        <p>
+            yeah yeah am working on it...
+        </p>
+    </div>
+</body>
+
+</html>
